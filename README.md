@@ -1,4 +1,4 @@
-# Hack Texter
+# Personal Website
 
-Welcome to my website's GitHub page.
+This is the source code for my personal website, which is still under development. To access it, go to sahir1234.github.io/index.html.
 
