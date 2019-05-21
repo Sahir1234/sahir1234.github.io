@@ -1,6 +1,6 @@
 html {
-  font-family: Georgia, Helvetica, serif;
-  font-size: 14px;
+  font-family: Archivo, Spectral, monospace;
+  font-size: 1.5em;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +16,7 @@ h1 {
   line-height: 2.0;
   text-shadow: 3px 2px blue;
   width: auto;
+  font-family: Georgia, Helvetica, serif;
   font-size: 4.5em;
   font-weight: bold;
 }
