@@ -5,6 +5,12 @@ html {
   padding: 0;
 }
 
+body {
+  background-image: url("background.png");
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
 h1 {
   text-align: center;
   width: auto;
