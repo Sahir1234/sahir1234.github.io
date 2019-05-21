@@ -7,7 +7,7 @@ html {
 
 body {
   background-image: url("movingbackground.gif");
-  background-repeat: space;
+  background-repeat: repeat;
 }
 
 h1 {
