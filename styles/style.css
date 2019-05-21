@@ -1,7 +1,4 @@
 html {
-  font-family: Archivo, Spectral, monospace;
-  font-size: 1.5em;
-  color: white;
   margin: 0;
   padding: 0;
 }
@@ -16,6 +13,7 @@ h1 {
   line-height: 2.0;
   text-shadow: 3px 2px blue;
   width: auto;
+  color: white;
   font-family: Georgia, Helvetica, serif;
   font-size: 3.5em;
   font-weight: bold;
@@ -24,6 +22,9 @@ h1 {
 
 p {
   display: block;
+  color: white;
+  font-size: 1.5em;
+  font-family: Archivo, Spectral, monospace;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
   -webkit-margin-start: 0px;
