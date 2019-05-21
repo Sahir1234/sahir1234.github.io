@@ -1,6 +1,7 @@
 html {
   font-family: Archivo, Spectral, monospace;
   font-size: 1.5em;
+  color: white;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +12,6 @@ body {
 }
 
 h1 {
-  color: white;
   text-align: center;
   line-height: 2.0;
   text-shadow: 3px 2px blue;
