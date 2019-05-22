@@ -19,6 +19,13 @@ h1 {
   font-weight: bold;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue; 
+}
 
 p {
   display: block;
