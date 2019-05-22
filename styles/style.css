@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background-image: url("tech-background.gif");
+  background-image: url("background.gif");
   background-size: cover;
 }
 
@@ -17,11 +17,6 @@ h1 {
   font-family: Georgia, Helvetica, serif;
   font-size: 4.5em;
   font-weight: bold;
-  background-color: black;
-  border: 1em;
-  border-style: solid;
-  border-color: white;
-  padding: 1em;
 }
 
 a {
