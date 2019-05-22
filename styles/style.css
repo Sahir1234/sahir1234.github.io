@@ -42,3 +42,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+
+.btn {
+  opacity: 1;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+
