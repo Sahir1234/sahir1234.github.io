@@ -17,6 +17,11 @@ h1 {
   font-family: Georgia, Helvetica, serif;
   font-size: 4.5em;
   font-weight: bold;
+  background-color: black;
+  border: 1em;
+  border-style: solid;
+  border-color: white;
+  padding: 1em;
 }
 
 a {
