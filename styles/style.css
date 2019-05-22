@@ -11,7 +11,7 @@ body {
 h1 {
   text-align: center;
   line-height: 1.0;
-  text-shadow: 3px 2px blue;
+  text-shadow: 3px 2px yellowgreen;
   width: auto;
   color: white;
   font-family: Georgia, Helvetica, serif;
@@ -25,7 +25,7 @@ a {
 
 p {
   display: block;
-  color: white;
+  color: yellowgreen;
   font-size: 1em;
   font-family: Archivo, Spectral, monospace;
   -webkit-margin-before: 0;
