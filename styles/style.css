@@ -4,14 +4,14 @@ html {
 }
 
 body {
-  background-image: url("final-background.gif");
+  background-image: url("background.gif");
   background-size: cover;
 }
 
 h1 {
   text-align: center;
   line-height: 1.0;
-  text-shadow: 3px 2px blue;
+  text-shadow: 3px 2px red;
   width: auto;
   color: white;
   font-family: Georgia, Helvetica, serif;
