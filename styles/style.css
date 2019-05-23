@@ -15,7 +15,7 @@ h1 {
   width: auto;
   color: white;
   font-family: Georgia, Helvetica, serif;
-  font-size: 4.5em;
+  font-size: 4em;
   font-weight: bold;
 }
 
@@ -26,13 +26,13 @@ a {
 p {
   display: block;
   color: white;
-  font-size: 1.5em;
+  font-size: 1em;
   font-family: Archivo, Spectral, monospace;
   -webkit-margin-before: 0;
   -webkit-margin-after: 1em;
-  -webkit-margin-start: 8em;
-  -webkit-margin-end: 8em;
-  text-align: justified;
+  -webkit-margin-start: 20em;
+  -webkit-margin-end: 20em;
+  text-align: justify;
   width: auto;
 }
 
