@@ -30,8 +30,8 @@ p {
   font-family: Archivo, Spectral, monospace;
   -webkit-margin-before: 0;
   -webkit-margin-after: 1em;
-  -webkit-margin-start: 20em;
-  -webkit-margin-end: 20em;
+  -webkit-margin-start: 25em;
+  -webkit-margin-end: 25em;
   text-align: justify;
   width: auto;
 }
