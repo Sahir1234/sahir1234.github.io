@@ -10,12 +10,12 @@ body {
 
 h1 {
   text-align: center;
-  line-height: 1.0;
+  line-height: 2.0;
   text-shadow: 3px 2px red;
   width: auto;
   color: white;
   font-family: Georgia, Helvetica, serif;
-  font-size: 4em;
+  font-size: 3.5em;
   font-weight: bold;
 }
 
