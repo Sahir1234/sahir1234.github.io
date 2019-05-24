@@ -28,7 +28,7 @@ h1 {
     opacity: 0;
   }
   60% {
-    transform: scale(1.3);
+    transform: scale(1.2);
     opacity: 1;
   }
   100% {
