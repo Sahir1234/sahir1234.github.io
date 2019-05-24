@@ -17,7 +17,7 @@ h1 {
   font-family: Georgia, Helvetica, serif;
   font-size: 3.5em;
   font-weight: bold;
-  animation: bounceIn 3s;
+  animation: bounceIn 1.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: 1;
 }
