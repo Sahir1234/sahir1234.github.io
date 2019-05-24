@@ -68,14 +68,16 @@ p {
 
 
 .S {
-  animation: spin 8s;
-  animation-delay: 10s;
+  animation: spin 2s;
   animation-iteration-count: infinite;
 }  
 
 
 @keyframes spin {
-  25% {
-    transform: rotate(1turn);
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
