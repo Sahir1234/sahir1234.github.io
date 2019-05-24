@@ -111,13 +111,11 @@ a {
 
 p {
   display: block;
-  padding: 2em;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 1em;
-  -webkit-margin-start: 10em;
-  -webkit-margin-end: 10em;
-  text-align: center;
-  max-width: 700px;
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  max-width: 650px;
 }
 
 .container {
