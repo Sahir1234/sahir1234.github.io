@@ -21,6 +21,20 @@ h1 {
   animation-iteration-count: 1;
 }
 
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.4);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 a {
   text-decoration: none; 
 }
@@ -51,18 +65,17 @@ p {
   margin-right: auto;
 }
 
-@keyframes bounceIn {
-  0% {
-    transform: scale(0.1);
-    opacity: 0;
-  }
-  60% {
-    transform: scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
+
+
+.S {
+  animation: spin 8s;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+}  
+
+
+@keyframes spin {
+  25% {
+    transform: rotate(1turn);
   }
 }
-
-
