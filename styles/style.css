@@ -9,6 +9,7 @@ html {
 body {
   background-image: url("background.gif");
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
