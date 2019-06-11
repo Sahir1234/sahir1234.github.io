@@ -26,36 +26,39 @@
       <div class="content">
 
         <p>
-          <br />
           <span id="section0"></span>
           <a class="btn" id="section1" style="color: red"href="https://www.umd.edu"></a>
-          . I'm currently studying <a class="btn" style="color: green"
-          href="https://www.cs.umd.edu">Computer Science</a> and am a part of the <a class="btn" style="color: gold"
-          href="https://www.universityhonors.umd.edu">University Honors</a> Program. I was also a part of the <a class="btn"
-          style="color: salmon" href="https://fire.umd.edu/streams-COML.html">First-Year Innovation and Research Experience</a>, where
-          I learned the fundamentals of machine learning.
+          <span id="section2"></span>
+          <a class="btn" id="section3" style="color: green" href="https://www.cs.umd.edu"></a>
+          <span id="section4"></span>
+          <a class="btn" id="section5" style="color: gold" href="https://www.universityhonors.umd.edu"></a>
+          <span id="section6"></span>
+          <a class="btn" id="section7" style="color: salmon" href="https://fire.umd.edu/streams-COML.html"></a>
+          <span id="section8"></span>
           <br />
           <br />
           <br />
+          <span id="section9"></span>
+          <a class="btn" id="section10" style="color: #458FFF" href="https://kappathetapi.com"></a>
+          <span id="section11"></span>
+          <a class="btn" id="section12" style="color: #F4C430" href="http://www.ter.ps/umdisa"></a>
+          <span id="section13"></span>
+          <a class="btn" id="section14" style="color: #D03027" href="https://today.umd.edu/articles/capital-one-tech-incubator-opens-diamondback-garage-b93bbf87-a326-44c6-a207-5f4c418b387f"></a>
+          <span id="section15"></span>
+          <a class="btn" id="section16" style="color: orange" href="https://github.com/Sahir1234"></a>
+          <span id="section17"></span>
           <br />
-          Outside of my classes, I am an active member of the <a class="btn" style="color: #458FFF" href="https://kappathetapi.com">
-          Kappa Theta Pi</a> fraternity and the <a class="btn" style="color: #F4C430"
-          href="http://www.ter.ps/umdisa">Indian Student Association</a>. Over the summer of 2019,
-          I also worked as a Software Engineering Intern at the <a class="btn" style="color: #D03027"
-          href="https://today.umd.edu/articles/capital-one-tech-incubator-opens-diamondback-garage-b93bbf87-a326-44c6-a207-5f4c418b387f">
-          Capital One Tech Incubator</a> in College Park. Feel free to look at my <a class="btn" style="color: orange"
-          href="https://github.com/Sahir1234">GitHub</a> to see some cool projects that I've worked on in my free time.
           <br />
           <br />
-          <br />
-          <br />
-         If you want to learn more about me or what I've done, you're welcome to check out my
-          <a class="btn" style="color: royalblue" href="https://github.com/Sahir1234/resume/blob/master/RESUME_CV.pdf">
-         resume</a>. You can also email me at <a class="btn" style="color: yellow" href="mailto:sahir.mody@gmail.com">sahir.mody@gmail.com</a>, call
-          me at <a class="btn" style="color: hotpink" href="tel:7328501382">732-850-1382</a>, or message me on
-          <a class="btn" style="color: #0077B5" href="https://www.linkedin.com/in/sahir-mody/">LinkedIn</a>.
-          Thanks for visiting my site and I look forward to hearing from you!
-          <br />
+          <span id="section18"></span>
+          <a class="btn" id="section19" style="color: royalblue" href="https://github.com/Sahir1234/resume/blob/master/RESUME_CV.pdf"></a>
+          <span id="section20"></span>
+          <a class="btn" id="section21" style="color: yellow" href="mailto:sahir.mody@gmail.com"></a>
+          <span id="section22"></span>
+          <a class="btn" id="section23" style="color: hotpink" href="tel:7328501382"></a>
+          <span id="section24"></span>
+          <a class="btn" id="section25" style="color: #0077B5" href="https://www.linkedin.com/in/sahir-mody/"></a>
+          <span id="section26"></span>
           <br />
         </p>
 
@@ -66,8 +69,35 @@
     <script>
     var i = 0;
     var txt = ['Hey! I\'m Sahir and I\'m a sophomore at the ',
-               'University of Maryland '];
-    var speed = 100; /* The speed/duration of the effect in milliseconds */
+               'University of Maryland.',
+               'I\'m currently studying ',
+               'Computer Science',
+               'and am a part of the ',
+               'University Honors',
+               'Program. I was also a part of the ',
+               'First-Year Innovation and Research Experience,',
+               'where I learned the fundamentals of machine learning.',
+               'Outside of my classes, I am an active member of the ',
+               'Kappa Theta Pi',
+               'fraternity and the ',
+               'Indian Student Association.',
+               'Over the summer of 2019, I also worked as a Software Engineering Intern at the ',
+               'Capital One Tech Incubator',
+               'in College Park. Feel free to look at my ',
+               'GitHub',
+               'to see some cool projects that I\'ve worked on in my free time!',
+               'If you want to learn more about me or what I\'ve done, you\'re welcome to check out my',
+               'resume.',
+               'You can also email me at ',
+               'sahir.mody@gmail.com,',
+               'call me at ',
+               '732-850-1382,',
+               'or message me on ',
+               'LinkedIn.',
+               'I look forward to hearing from you!'];
+
+    var speed = 25; /* The speed/duration of the effect in milliseconds */
+    var slowSpeed =  2000;
     var section = 0;
 
     function typeWriter() {
@@ -75,10 +105,14 @@
         document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
         i++;
         setTimeout(typeWriter, speed);
-      } else if (section < 1){
+      } else if (section < 26){
         section++;
         i = 0;
-        setTimeout(typeWriter, speed);
+        if(section == 9 || section == 18) {
+          setTimeout(typeWriter, slowSpeed);
+        } else {
+          setTimeout(typeWriter, speed);
+        }
       }
     }
 
