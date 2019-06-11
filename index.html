@@ -22,16 +22,17 @@
           SAHIR MODY
         </h1>
       </div>
-      
+
       <div class="content">
-       
-        <p style="background-color: black">
+
+        <p>
           <br />
-          Hey! I'm Sahir and I'm a sophomore at the <a class="btn" style="color: red" 
-          href="https://www.umd.edu">University of Maryland</a>. I'm currently studying <a class="btn" style="color: green" 
-          href="https://www.cs.umd.edu">Computer Science</a> and am a part of the <a class="btn" style="color: gold" 
+          <span id="section0"></span>
+          <a class="btn" i="section1" style="color: red"href="https://www.umd.edu"></a>
+          . I'm currently studying <a class="btn" style="color: green"
+          href="https://www.cs.umd.edu">Computer Science</a> and am a part of the <a class="btn" style="color: gold"
           href="https://www.universityhonors.umd.edu">University Honors</a> Program. I was also a part of the <a class="btn"
-          style="color: salmon" href="https://fire.umd.edu/streams-COML.html">First-Year Innovation and Research Experience</a>, where 
+          style="color: salmon" href="https://fire.umd.edu/streams-COML.html">First-Year Innovation and Research Experience</a>, where
           I learned the fundamentals of machine learning.
           <br />
           <br />
@@ -39,21 +40,21 @@
           <br />
           Outside of my classes, I am an active member of the <a class="btn" style="color: #458FFF" href="https://kappathetapi.com">
           Kappa Theta Pi</a> fraternity and the <a class="btn" style="color: #F4C430"
-          href="http://www.ter.ps/umdisa">Indian Student Association</a>. Over the summer of 2019, 
-          I also worked as a Software Engineering Intern at the <a class="btn" style="color: #D03027" 
+          href="http://www.ter.ps/umdisa">Indian Student Association</a>. Over the summer of 2019,
+          I also worked as a Software Engineering Intern at the <a class="btn" style="color: #D03027"
           href="https://today.umd.edu/articles/capital-one-tech-incubator-opens-diamondback-garage-b93bbf87-a326-44c6-a207-5f4c418b387f">
-          Capital One Tech Incubator</a> in College Park. Feel free to look at my <a class="btn" style="color: orange" 
+          Capital One Tech Incubator</a> in College Park. Feel free to look at my <a class="btn" style="color: orange"
           href="https://github.com/Sahir1234">GitHub</a> to see some cool projects that I've worked on in my free time.
           <br />
           <br />
           <br />
           <br />
-          If you want to learn more about me or what I've done, you're welcome to check out my 
+         If you want to learn more about me or what I've done, you're welcome to check out my
           <a class="btn" style="color: royalblue" href="https://github.com/Sahir1234/resume/blob/master/RESUME_CV.pdf">
-          resume</a>. You can also email me at <a class="btn" style="color: yellow" href="mailto:sahir.mody@gmail.com">sahir.mody@gmail.com</a>, call 
-          me at <a class="btn" style="color: hotpink" href="tel:7328501382">732-850-1382</a>, or message me on 
-          <a class="btn" style="color: #0077B5" href="https://www.linkedin.com/in/sahir-mody/">LinkedIn</a>. 
-          Thanks for visiting my site and I look forward to hearing from you! 
+         resume</a>. You can also email me at <a class="btn" style="color: yellow" href="mailto:sahir.mody@gmail.com">sahir.mody@gmail.com</a>, call
+          me at <a class="btn" style="color: hotpink" href="tel:7328501382">732-850-1382</a>, or message me on
+          <a class="btn" style="color: #0077B5" href="https://www.linkedin.com/in/sahir-mody/">LinkedIn</a>.
+          Thanks for visiting my site and I look forward to hearing from you!
           <br />
           <br />
         </p>
@@ -61,6 +62,27 @@
       </div>
 
     </div>
+
+    <script>
+    var i = 0;
+    var txt = ['Hey! I\'m Sahir and I\'m a sophomore at the ','University of Maryland '];
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    var section = 0;
+
+    function typeWriter() {
+      if (i < txt[section].length) {
+        document.getElementById('section' + section).innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      } else if (section < 2){
+        section++;
+        txt =
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    typeWriter();
+    </script>
 
   </body>
 </html>
