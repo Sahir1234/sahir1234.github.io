@@ -35,9 +35,9 @@
           <span id="section6"></span>
           <a class="btn" id="section7" style="color: salmon" href="https://fire.umd.edu/streams-COML.html"></a>
           <span id="section8"></span>
-          <br />
-          <br />
-          <br />
+        </p>
+
+        <p>
           <span id="section9"></span>
           <a class="btn" id="section10" style="color: #458FFF" href="https://kappathetapi.com"></a>
           <span id="section11"></span>
@@ -47,9 +47,9 @@
           <span id="section15"></span>
           <a class="btn" id="section16" style="color: orange" href="https://github.com/Sahir1234"></a>
           <span id="section17"></span>
-          <br />
-          <br />
-          <br />
+        </p>
+
+        <p>
           <span id="section18"></span>
           <a class="btn" id="section19" style="color: royalblue" href="https://github.com/Sahir1234/resume/blob/master/RESUME_CV.pdf"></a>
           <span id="section20"></span>
@@ -59,10 +59,11 @@
           <span id="section24"></span>
           <a class="btn" id="section25" style="color: #0077B5" href="https://www.linkedin.com/in/sahir-mody/"></a>
           <span id="section26"></span>
-          <br />
         </p>
 
       </div>
+
+
 
     </div>
 
@@ -102,10 +103,15 @@
 
     function typeWriter() {
       if (i < txt[section].length) {
+        if(i > 0){
+          document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1);
+        }
         document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
+        document.getElementById('section' + section).innerHTML += '|';
         i++;
         setTimeout(typeWriter, speed);
       } else if (section < 26){
+        document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1);
         section++;
         i = 0;
         if(section == 9 || section == 18) {
@@ -113,6 +119,8 @@
         } else {
           setTimeout(typeWriter, speed);
         }
+      } else {
+        document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1);
       }
     }
 
