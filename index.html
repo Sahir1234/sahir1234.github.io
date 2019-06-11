@@ -72,7 +72,7 @@
 
     function typeWriter() {
       if (i < txt[section].length) {
-        document.getElementById('section' + section).innerHTML += txt.charAt(i);
+        document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
         i++;
         setTimeout(typeWriter, speed);
       } else if (section < 2){
