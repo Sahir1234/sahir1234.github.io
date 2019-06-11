@@ -39,7 +39,7 @@ p {
   padding: 1em;
   margin-left: auto;
   margin-right: auto;
-  text-align: justify;
+  text-align: left;
   max-width: 500px;
   background-color: black;
 }
