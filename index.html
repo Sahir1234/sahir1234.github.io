@@ -97,21 +97,21 @@
                'LinkedIn.',
                'I look forward to hearing from you!'];
 
-    var speed = 30; /* The speed/duration of the effect in milliseconds */
-    var slowSpeed =  2050;
+    var speed = 55; /* The speed/duration of the effect in milliseconds */
+    var slowSpeed =  2000;
     var section = 0;
+    var cursorIcon = '|'
 
     function typeWriter() {
+      if(i > 0){
+        document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1*cursorIcon.length);
+      }
       if (i < txt[section].length) {
-        if(i > 0){
-          document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1);
-        }
         document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
-        document.getElementById('section' + section).innerHTML += '|';
+        document.getElementById('section' + section).innerHTML += cursorIcon;
         i++;
         setTimeout(typeWriter, speed);
       } else if (section < 26){
-        document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1);
         section++;
         i = 0;
         if(section == 9 || section == 18) {
@@ -119,8 +119,6 @@
         } else {
           setTimeout(typeWriter, speed);
         }
-      } else {
-        document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1);
       }
     }
 
