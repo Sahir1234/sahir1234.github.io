@@ -26,6 +26,7 @@
       <div class="content">
 
         <p>
+          <span class="blinking" id="cursorBlink1">|</span>
           <span id="section0"></span>
           <a class="btn" id="section1" style="color: red"href="https://www.umd.edu"></a>
           <span id="section2"></span>
@@ -38,6 +39,7 @@
         </p>
 
         <p>
+          <span class="blinking" id="cursorBlink2"></span>
           <span id="section9"></span>
           <a class="btn" id="section10" style="color: #458FFF" href="https://kappathetapi.com"></a>
           <span id="section11"></span>
@@ -50,6 +52,7 @@
         </p>
 
         <p>
+          <span class="blinking" id="cursorBlink3"></span>
           <span id="section18"></span>
           <a class="btn" id="section19" style="color: royalblue" href="https://github.com/Sahir1234/resume/blob/master/RESUME_CV.pdf"></a>
           <span id="section20"></span>
@@ -97,12 +100,17 @@
                'LinkedIn.',
                'I look forward to hearing from you!'];
 
-    var speed = 35; /* The speed/duration of the effect in milliseconds */
-    var slowSpeed =  2000;
+    var speed = 40; /* The speed/duration of the effect in milliseconds */
     var section = 0;
-    var cursorIcon = '<span style="background-color: white; color: white">$</span>'
+    var cursorIcon = '<span style="background-color: white; color: transparent">|</span>';
+    var cursorLoadTime = 3500;
 
-    function typeWriter() {
+    function printText() {
+      if(section % 9 == 0) {
+        document.getElementById('cursorBlink1').innerHTML = '';
+        document.getElementById('cursorBlink2').innerHTML = '';
+        document.getElementById('cursorBlink3').innerHTML = '';
+      }
       if(i > 0){
         document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1*cursorIcon.length);
       }
@@ -110,19 +118,24 @@
         document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
         document.getElementById('section' + section).innerHTML += cursorIcon;
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(printText, speed);
       } else if (section < 26){
         section++;
         i = 0;
-        if(section == 9 || section == 18) {
-          setTimeout(typeWriter, slowSpeed);
+        if(section == 9) {
+          document.getElementById('cursorBlink2').innerHTML = '|';
+          setTimeout(printText, cursorLoadTime);
+        } else if(section == 18){
+          document.getElementById('cursorBlink3').innerHTML = '|';
+          setTimeout(printText, cursorLoadTime);
         } else {
-          setTimeout(typeWriter, speed);
+          setTimeout(printText, speed);
         }
       }
     }
 
-    typeWriter();
+    setTimeout(printText, cursorLoadTime);
+
     </script>
 
   </body>
