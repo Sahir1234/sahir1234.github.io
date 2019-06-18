@@ -75,78 +75,7 @@
 
     </div>
 
-    <script>
-    var i = 0;
-    var txt = ['Hey! I\'m Sahir and I\'m a sophomore at the ',
-               'University of Maryland.',
-               'I\'m currently studying ',
-               'Computer Science',
-               'and am a part of the ',
-               'University Honors',
-               'Program. I was also a part of the ',
-               'First-Year Innovation and Research Experience,',
-               'where I learned the fundamentals of machine learning.',
-               'Outside of my classes, I am an active member of the ',
-               'Kappa Theta Pi',
-               'fraternity and the ',
-               'Indian Student Association.',
-               'Over the summer of 2019, I also worked as a Software Engineering Intern at the ',
-               'Capital One Tech Incubator',
-               'in College Park. Feel free to look at my ',
-               'GitHub',
-               'to see some cool projects that I\'ve worked on in my free time!',
-               'If you want to learn more about me or what I\'ve done, you\'re welcome to check out my',
-               'resume.',
-               'You can also email me at ',
-               'sahir.mody@gmail.com,',
-               'call me at ',
-               '732-850-1382,',
-               'or message me on ',
-               'LinkedIn.',
-               'I look forward to hearing from you!'];
-
-    var speed = 40; /* The speed/duration of the effect in milliseconds */
-    var section = 0;
-    var cursorIcon = '<span style="background-color: white; color: transparent">|</span>';
-    var cursorLoadTime = 2100;
-
-    function printText() {
-      if(section % 9 == 0) {
-        document.getElementById('cursorBlink1').innerHTML = '';
-        document.getElementById('cursorBlink2').innerHTML = '';
-        document.getElementById('cursorBlink3').innerHTML = '';
-      }
-      if(i > 0){
-        document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1*cursorIcon.length);
-      }
-      if (i < txt[section].length) {
-        document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
-        document.getElementById('section' + section).innerHTML += cursorIcon;
-        i++;
-        setTimeout(printText, speed);
-      } else if (section < 26){
-        section++;
-        i = 0;
-        if(section == 9) {
-          document.getElementById('cursorBlink2').innerHTML = '|';
-          setTimeout(printText, cursorLoadTime);
-        } else if(section == 18){
-          document.getElementById('cursorBlink3').innerHTML = '|';
-          setTimeout(printText, cursorLoadTime);
-        } else {
-          setTimeout(printText, speed);
-        }
-      } else {
-        document.getElementById('cursorBlink4').innerHTML = '|';
-        setTimeout(function() {
-          document.getElementById('cursorBlink4').innerHTML = '';
-        }, cursorLoadTime);
-      }
-    }
-
-    setTimeout(printText, 2*cursorLoadTime);
-
-    </script>
+    <script src="script.js"></script>
 
   </body>
 </html>
