@@ -73,7 +73,7 @@ function printText() {
   } else {
 
     // Final Animation of the blinking cursor
-    if(section == txt.length) {
+    if(section == txt.length - 1) {
       document.getElementById('cursorBlink4').innerHTML = '|';
       setTimeout(function() {
         document.getElementById('cursorBlink4').innerHTML = '';
