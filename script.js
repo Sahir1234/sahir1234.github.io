@@ -42,11 +42,16 @@ var cursorIcon = '<span style="background-color: white; color: transparent">|</s
 // length in milliseconds that we should let the cursor blink for
 var cursorLoadTime = 2100;
 
+// returns if a specific section is a start of a new paragraph in the text
+function startOfNewParagraph(section) {
+  return section == 0 || section == 9 || section == 18;
+}
 
+// Animated printing of the text as if it is being typed by a cursor
 function printText() {
 
   // When we reach the start of a new pargraph,  reset all of the cursor text
-  if(section % 9 == 0) {
+  if(startOfNewParagraph(section)) {
     document.getElementById('cursorBlink1').innerHTML = '';
     document.getElementById('cursorBlink2').innerHTML = '';
     document.getElementById('cursorBlink3').innerHTML = '';
@@ -57,7 +62,7 @@ function printText() {
     document.getElementById('section' + section).innerHTML = document.getElementById('section' + section).innerHTML.slice(0,-1*cursorIcon.length);
   }
 
-  // if we still have more letters to type, we add thenext letter and the cursor
+  // if we still have more letters to type, we add the next letter and the cursor
   if (i < txt[section].length) {
 
     document.getElementById('section' + section).innerHTML += txt[section].charAt(i);
@@ -68,7 +73,7 @@ function printText() {
   } else {
 
     // Final Animation of the blinking cursor
-    if(section == 26) {
+    if(section == txt.length) {
       document.getElementById('cursorBlink4').innerHTML = '|';
       setTimeout(function() {
         document.getElementById('cursorBlink4').innerHTML = '';
@@ -80,7 +85,7 @@ function printText() {
 
     // At the start of the next section, we let the cursor blink for a bit and
     // then begin typing
-    if(section % 9 == 0) {
+    if(startOfNewParagraph(section)) {
       document.getElementById('cursorBlink' + (1 + (section/9))).innerHTML = '|';
       setTimeout(printText, cursorLoadTime);
     } else {
