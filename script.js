@@ -31,7 +31,7 @@ var txt = ['Hey! I\'m Sahir Mody and I\'m a sophomore at the ',
                'I look forward to hearing from you!'];
 
 // The speed/duration of the effect in milliseconds
-var speed = 30;
+var speed = 25;
 
 // denotes what section of the array we are currently typing out
 var section = 0;
