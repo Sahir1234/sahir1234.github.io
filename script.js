@@ -40,7 +40,7 @@ var section = 0;
 var cursorIcon = '<span style="background-color: white; color: transparent">|</span>';
 
 // length in milliseconds that we should let the cursor blink for
-var cursorLoadTime = 2000;
+var cursorLoadTime = 1800;
 
 // indices of the array that specify where new paragraphs start
 const firstStartingSection = 0;
@@ -74,14 +74,6 @@ function printText() {
     document.getElementById('section' + section).innerHTML += cursorIcon;
     i++;
     setTimeout(printText, speed);
-  } else if(section == txt.length - 1) {
-
-    // if we have reached the end of the text, we do the final animation
-    document.getElementById('cursorBlinkFinal').innerHTML = '|';
-    setTimeout(function() {
-      document.getElementById('cursorBlinkFinal').innerHTML = '';
-    }, 2*cursorLoadTime);
-
   } else {
 
     section++;
