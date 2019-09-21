@@ -31,7 +31,7 @@ var txt = ['Hey! I\'m Sahir Mody and I\'m a sophomore at the ',
                'I look forward to hearing from you!'];
 
 // The speed/duration of the effect in milliseconds
-var speed = 25;
+var speed = 20;
 
 // denotes what section of the array we are currently typing out
 var section = 0;
@@ -40,7 +40,7 @@ var section = 0;
 var cursorIcon = '<span style="background-color: white; color: transparent">|</span>';
 
 // length in milliseconds that we should let the cursor blink for
-var cursorLoadTime = 1800;
+var cursorLoadTime = 1700;
 
 // indices of the array that specify where new paragraphs start
 const firstStartingSection = 0;
