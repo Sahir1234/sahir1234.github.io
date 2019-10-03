@@ -2,7 +2,7 @@
 var i = 0;
 
 // array of strings to store the content on the site
-var txt = ['Hey! I\'m Sahir Mody and I\'m a junior at the ',
+var txt = ['Hey! I\'m Sahir Mody and I\'m a student at the ',
                'University of Maryland.',
                'I\'m currently studying ',
                'Computer Science',
