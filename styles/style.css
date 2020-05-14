@@ -12,20 +12,9 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
-  text-align: center;
-  line-height: 1.0;
-  text-shadow: 3px 2px red;
-  width: auto;
-  color: white;
-  font-family: Georgia, Helvetica, serif;
-  font-size: 3.5em;
-  font-weight: bold;
-}
 
 a {
-  text-decoration: none; 
-  background-color: black;
+  text-decoration: none;
 }
 
 .btn {
@@ -40,52 +29,35 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  text-align: left;
+  text-align: justify;
   max-width: 700px;
   min-height: 5em;
   line-height: 1.5;
-}
-
-.blinking {
-  color: transparent;
-  background-color: white;
-  -webkit-animation: blinkingText 0.7s infinite;
-  -moz-animation: blinkingText 0.7s infinite; 
-  -o-animation: blinkingText 0.7s infinite;
-  animation: blinkingText 0.7s infinite;
-}
-
-@-webkit-keyframes blinkingText {
-	0%{opacity: 1.0;}
-	49%{opacity: 1.0;}
-	50%{opacity: 0.0;}
-	99%{opacity: 0.0;}
-	100%{opacity: 1.0;}
-}
-@-moz-keyframes blinkingText {
-	0%{opacity: 1.0;}
-	49%{opacity: 1.0;}
-	50%{opacity: 0.0;}
-	99%{opacity: 0.0;}
-	100%{opacity: 1.0;}
-}
-@-o-keyframes blinkingText {
-	0%{opacity: 1.0;}
-	49%{opacity: 1.0;}
-	50%{opacity: 0.0;}
-	99%{opacity: 0.0;}
-	100%{opacity: 1.0;}
-}
-
-@keyframes blinkingText{
-	0%{opacity: 1.0;}
-	49%{opacity: 1.0;}
-	50%{opacity: 0.0;}
-	99%{opacity: 0.0;}
-	100%{opacity: 1.0;}
+  background-color: black;
+  padding: 1em;
+  border-radius: 20px;
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
+}
+
+#wrap {
+  position: relative;
+}
+
+.ball {
+  pointer-events: none;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: black;
+  animation: implode 1s ease-in-out;
+  animation-fill-mode: both;
+  opacity: .5;
+}
+
+@keyframes implode {
+  100% {transform: scale(0)}
 }
