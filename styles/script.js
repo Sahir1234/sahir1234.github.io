@@ -17,20 +17,22 @@ $(document).ready(function(){
 	});
 
 	var draw = setInterval(function(){
-			var maxWidth = window.innerWidth - 35;
-			var maxHeight = window.innerHeight - 35;
+			var maxWidth = window.innerWidth;
+			var maxHeight = window.innerHeight;
   		if(mousePos.x > 0 && mousePos.y > 0 && mousePos.x < maxWidth && mousePos.y < maxHeight){
 
-    			var range = 10;
+    			var range = 15;
 
-    			var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
+    			var color = "background: rgb("+getRandomInt(255,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
 
     			var sizeInt = getRandomInt(10, 20);
-    			size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
+					var size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
 
-    			var left = "left: " + getRandomInt(mousePos.x-range-sizeInt, mousePos.x+range) + "px;";
+					var leftInt = getRandomInt(mousePos.x-range-sizeInt, Math.min(mousePos.x+range-sizeInt, maxWidth - sizeInt - 10));
+    			var left = "left: " + leftInt + "px;";
 
-    			var top = "top: " + getRandomInt(mousePos.y-range-sizeInt, mousePos.y+range) + "px;";
+					var topInt = getRandomInt(mousePos.y-range-sizeInt, Math.min(mousePos.y+range-sizeInt, maxHeight - sizeInt - 10));
+    			var top = "top: " + topInt + "px;";
 
     			var style = left+top+color+size;
     			$("<div class='ball' style='" + style + "'></div>").appendTo('#wrap').one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){$(this).remove();});
