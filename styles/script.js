@@ -28,10 +28,10 @@ $(document).ready(function(){
     			var sizeInt = getRandomInt(10, 20);
 					var size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";
 
-					var leftInt = getRandomInt(mousePos.x-range-sizeInt, Math.min(mousePos.x+range-sizeInt, maxWidth - sizeInt - 10));
+					var leftInt = getRandomInt(Math.max(mousePos.x-range-sizeInt, 0), Math.min(mousePos.x+range-sizeInt, maxWidth - sizeInt - 10));
     			var left = "left: " + leftInt + "px;";
 
-					var topInt = getRandomInt(mousePos.y-range-sizeInt, Math.min(mousePos.y+range-sizeInt, maxHeight - sizeInt - 10));
+					var topInt = getRandomInt(Math.max(mousePos.y-range-sizeInt, 0), Math.min(mousePos.y+range-sizeInt, maxHeight - sizeInt - 10));
     			var top = "top: " + topInt + "px;";
 
     			var style = left+top+color+size;
