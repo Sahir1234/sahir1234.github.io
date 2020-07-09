@@ -4,16 +4,14 @@ html {
   color: white;
   font-size: 1.5em;
   font-family: Archivo, Spectral, monospace;
-  cursor: none;
 }
 
 body {
   background-image: url("background.gif");
   background-repeat: repeat;
   background-attachment: fixed;
-  cursor: none;
+  overflow: auto;
 }
-
 
 a {
   text-decoration: none;
@@ -24,7 +22,6 @@ a {
 }
 
 .btn:hover {
-  cursor: none;
   opacity: 0.5;
 }
 
@@ -44,23 +41,5 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-}
-
-#wrap {
   position: relative;
-}
-
-.ball {
-  pointer-events: none;
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  background: black;
-  animation: implode 1s ease-in-out;
-  animation-fill-mode: both;
-  opacity: .5;
-}
-
-@keyframes implode {
-  100% {transform: scale(0)}
 }
