@@ -4,29 +4,29 @@ html {
   color: white;
   font-size: 1.5em;
   font-family: Archivo, Spectral, monospace;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 body {
   background-image: url("background.gif");
   background-repeat: repeat;
   background-attachment: fixed;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 
 a {
   text-decoration: none;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 .btn {
   opacity: 1;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 .btn:hover {
-  cursor: none;
+  /*cursor: none;*/
   opacity: 0.5;
 }
 
@@ -41,18 +41,18 @@ p {
   background-color: black;
   padding: 1em;
   border-radius: 20px;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 .container {
   margin-left: auto;
   margin-right: auto;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 #wrap {
   position: relative;
-  cursor: none;
+  /*cursor: none;*/
 }
 
 .ball {
