@@ -1,72 +1,22 @@
-html {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-size: 1.5em;
-  font-family: Archivo, Spectral, monospace;
-  /*cursor: none;*/
-}
 
 body {
-  background-image: url("background.gif");
-  background-repeat: repeat;
-  background-attachment: fixed;
-  /*cursor: none;*/
+  background-image: url("../assets/background.gif");
+  background-size: cover;
+  background-position: center;
+  font-family: 'East Sea Dokdo', serif;
+  font-size: 2em;
 }
 
-
-a {
-  text-decoration: none;
-  /*cursor: none;*/
-}
-
-.btn {
-  opacity: 1;
-  /*cursor: none;*/
-}
-
-.btn:hover {
-  /*cursor: none;*/
-  opacity: 0.5;
-}
-
-p {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: justify;
-  max-width: 700px;
-  min-height: 5em;
-  line-height: 1.5;
+.card {
   background-color: black;
-  padding: 1em;
-  border-radius: 20px;
-  /*cursor: none;*/
+  color: white;
+  border-radius: 15px;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  /*cursor: none;*/
+h1 {
+  font-family: 'Permanent Marker', cursive;
 }
 
-#wrap {
-  position: relative;
-  /*cursor: none;*/
-}
-
-.ball {
-  pointer-events: none;
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  background: black;
-  animation: implode 1s ease-in-out;
-  animation-fill-mode: both;
-  opacity: .5;
-  border-radius: 10px;
-}
-
-@keyframes implode {
-  100% {transform: scale(0)}
+a:hover {
+  opacity: 0.5;
 }
