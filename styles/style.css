@@ -3,8 +3,8 @@ body {
   background-image: url("../assets/background.gif");
   background-size: cover;
   background-position: center;
-  font-family: 'East Sea Dokdo', serif;
-  font-size: 2em;
+  font-family: 'Arvo', serif;
+  font-size: 1.5em;
 }
 
 .card {
