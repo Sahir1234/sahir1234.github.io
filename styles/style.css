@@ -11,9 +11,8 @@ body {
   background-color: rgba(1,1,1, 0.6);
   color: white;
   border-radius: 85px;
-  
-}
 
+}
 
 a:hover {
   opacity: 0.4;
